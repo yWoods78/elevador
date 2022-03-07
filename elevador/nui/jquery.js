@@ -66,7 +66,7 @@ function init() {
 }
 
 function sendData(name, data) {
-	$.post("http://bdl_elevador/" + name, JSON.stringify(data), function(
+	$.post("http://elevador/" + name, JSON.stringify(data), function(
 		datab
 	) {
 		if (datab != "ok") {
