@@ -53,7 +53,7 @@ button:hover {
     left: 5vw;
 }
 
-.buttonStyleFirst {
+.buttonStyle1 {
     position: absolute;
     background-color: rgba(0,0,0,0.6);
     height: 5vw;
@@ -65,13 +65,13 @@ button:hover {
     border-color: rgba(255,255,255,0.6);
 }
 
-.buttonStyleFirst:hover {
+.buttonStyle1:hover {
     transform: scale(1.02,1.02);
     background-color: rgba(0,0,0,0.85);
     color: rgba(255,255,255,0.9);
 }
 
-.buttonStyleSecond {
+.buttonStyle2 {
     position: absolute;
     background-color: rgba(0,0,0,0.6);
     height: 5vw;
@@ -83,13 +83,13 @@ button:hover {
     border-color: rgba(255,255,255,0.6);
 }
 
-.buttonStyleSecond:hover {
+.buttonStyle2:hover {
     transform: scale(1.02,1.02);
     background-color: rgba(0,0,0,0.85);
     color: rgba(255,255,255,0.9);
 }
 
-.buttonStyleThird {
+.buttonStyle3 {
     position: absolute;
     background-color: rgba(0,0,0,0.6);
     height: 5vw;
@@ -101,13 +101,13 @@ button:hover {
     border-color: rgba(255,255,255,0.6);
 }
 
-.buttonStyleThird:hover {
+.buttonStyle3:hover {
     transform: scale(1.02,1.02);
     background-color: rgba(0,0,0,0.85);
     color: rgba(255,255,255,0.9);
 }
 
-.buttonStyleFourth {
+.buttonStyle4 {
     position: absolute;
     background-color: rgba(0,0,0,0.6);
     height: 5vw;
@@ -119,14 +119,14 @@ button:hover {
     border-color: rgba(255,255,255,0.6);
 }
 
-.buttonStyleFourth:hover {
+.buttonStyle4:hover {
     transform: scale(1.02,1.02);
     background-color: rgba(0,0,0,0.85);
     color: rgba(255,255,255,0.9);
 }
 
 
-.buttonStyleFifth {
+.buttonStyle5 {
     position: absolute;
     background-color: rgba(0,0,0,0.6);
     height: 5vw;
@@ -138,13 +138,13 @@ button:hover {
     border-color: rgba(255,255,255,0.6);
 }
 
-.buttonStyleFifth:hover {
+.buttonStyle5:hover {
     transform: scale(1.02,1.02);
     background-color: rgba(0,0,0,0.85);
     color: rgba(255,255,255,0.9);
 }
 
-.buttonStyleSixth {
+.buttonStyle6 {
     position: absolute;
     background-color: rgba(0,0,0,0.6);
     height: 5vw;
@@ -156,13 +156,13 @@ button:hover {
     border-color: rgba(255,255,255,0.6);
 }
 
-.buttonStyleSixth:hover {
+.buttonStyle6:hover {
     transform: scale(1.02,1.02);
     background-color: rgba(0,0,0,0.85);
     color: rgba(255,255,255,0.9);
 }
 
-.buttonStyleSeventh {
+.buttonStyle7 {
     position: absolute;
     background-color: rgba(0,0,0,0.6);
     height: 5vw;
@@ -174,13 +174,13 @@ button:hover {
     border-color: rgba(255,255,255,0.6);
 }
 
-.buttonStyleSeventh:hover {
+.buttonStyle7:hover {
     transform: scale(1.02,1.02);
     background-color: rgba(0,0,0,0.85);
     color: rgba(255,255,255,0.9);
 }
 
-.buttonStyleEigth {
+.buttonStyle8 {
     position: absolute;
     background-color: rgba(0,0,0,0.6);
     height: 5vw;
@@ -192,7 +192,7 @@ button:hover {
     border-color: rgba(255,255,255,0.6);
 }
 
-.buttonStyleEigth:hover {
+.buttonStyle8:hover {
     transform: scale(1.02,1.02);
     background-color: rgba(0,0,0,0.85);
     color: rgba(255,255,255,0.9);
