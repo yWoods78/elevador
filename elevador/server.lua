@@ -21,12 +21,19 @@ end
 
 function src.elevs(type)
     local elevadores = {}
+    local title = {}
     for k,v in pairs(cfg.elevadores) do
         for k2,v2 in pairs(v) do
             if k == type then
-                table.insert(elevadores,{slot = k2})
+                table.insert(elevadores,{slot = k2,title = type})
             end
         end
     end
-    return elevadores
+    for k3,v3 in pairs(cfg.elevadores) do
+        if k3 == type then
+            table.insert(title,type)
+        end
+    end
+
+    return elevadores,title
 end
