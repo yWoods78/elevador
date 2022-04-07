@@ -8,6 +8,7 @@ $(function() {
   
 	  if (item.showmenu) {
 		ResetMenu();
+		RequestElevador();
 		$('body').css('background-color', 'rgba(0, 0, 75, 0.15)')
 		actionContainer.fadeIn();
 	  }
@@ -41,12 +42,13 @@ function ResetMenu() {
 
 function init() {
 	$(".menuoption").each(function(i, obj) {
-		if ($(this).attr("data-action")) {
-		$(this).click(function() {
-			var data = $(this).data("action");
-			sendData("ButtonClick", data);
-		});
-		}
+		// console.log('cheguei')
+		// if ($(this).attr("data-action")) {
+		// $(this).click(function() {
+		// 	var data = $(this).data("action");
+		// 	sendData("ButtonClick", data);
+		// });
+		// }
 
 		if ($(this).attr("data-sub")) {
 		var menu = $(this).data("sub");
@@ -65,6 +67,15 @@ function init() {
 	});
 }
 
+$(document).on("click", ".menuoption", function () {
+	if ($(this).attr("data-action")) {
+		$(this).click(function() {
+			var data = $(this).data("action");
+			sendData("ButtonClick", data);
+		});
+	}
+});
+
 function sendData(name, data) {
 	$.post("http://elevador/" + name, JSON.stringify(data), function(
 		datab
@@ -72,6 +83,30 @@ function sendData(name, data) {
 		if (datab != "ok") {
 		console.log(datab);
 		}
+	});
+}
+
+function RequestElevador () {
+	$.post("http://elevador/QtdElev", JSON.stringify({}), (data) => {
+		let i = 0;
+		const nameList = data.agendados.sort((a, b) => (a.nome > b.nome) ? 1 : -1);
+
+		// ============= MEUS SEGUROS =============//
+		$('.mainContainer').html(`
+		<div class="titleContainer">
+			<h1>ELEVADOR</h1>
+		</div>
+		
+		<div class="buttonsContainer">
+		${nameList.map((item) => (`
+		
+			<span class="buttonStyle${item.slot}">
+				<button class="menuoption" data-action="${item.slot}">${item.slot}°</button>
+			</span>
+		
+		`)).join('')}
+		</div>
+		`);
 	});
 }
 
