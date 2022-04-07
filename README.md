@@ -16,4 +16,5 @@ Acess é para dizer se o blip vai aparecer ou não;
 
 A permissão é por andar, por exemplo na policia, recrutas só podem acessar o 1º andar, altas pantentes podem ir até o resto;
 
-só funciona em 3 coordenadas mas está bem facil de adaptar para suas necessecidades
+o elevador se auto ajusta conforme são colocadas novas coordenadas
+Maximo 8 coordenadas
