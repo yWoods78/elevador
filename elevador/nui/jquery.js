@@ -90,11 +90,9 @@ function RequestElevador () {
 	$.post("http://elevador/QtdElev", JSON.stringify({}), (data) => {
 		let i = 0;
 		const nameList = data.agendados.sort((a, b) => (a.nome > b.nome) ? 1 : -1);
-
-		// ============= MEUS SEGUROS =============//
 		$('.mainContainer').html(`
 		<div class="titleContainer">
-			<h1>ELEVADOR</h1>
+			<h1>ELEVADOR ${data.title}</h1>
 		</div>
 		
 		<div class="buttonsContainer">
