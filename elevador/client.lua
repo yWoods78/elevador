@@ -44,9 +44,11 @@ RegisterNUICallback("ButtonClick",function(data,cb)
 end)
 
 RegisterNUICallback("QtdElev",function(data,cb)
-	local agendados = vSERVER.elevs(slavo)
+	local agendados,title = vSERVER.elevs(slavo)
 	if agendados then
-		cb({ agendados = agendados })
+		cb({ agendados = agendados,
+			title = title
+		})
 	end
 end)
 
