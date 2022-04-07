@@ -18,3 +18,15 @@ function src.checkpermission(perm)
         return true
     end
 end
+
+function src.elevs(type)
+    local elevadores = {}
+    for k,v in pairs(cfg.elevadores) do
+        for k2,v2 in pairs(v) do
+            if k == type then
+                table.insert(elevadores,{slot = k2})
+            end
+        end
+    end
+    return elevadores
+end
