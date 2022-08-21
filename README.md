@@ -18,3 +18,4 @@ A permissão é por andar, por exemplo na policia, recrutas só podem acessar o 
 
 o elevador se auto ajusta conforme são colocadas novas coordenadas
 
+Qualquer suporte em https://discord.gg/KWxsjNvJRK
