@@ -1,5 +1,5 @@
 # elevador
-Elevador do Badland modificado para suportar multi coordenadas 
+Elevador com multi coordenadas 
 
 As coordenadas devem ser em vector3 
 Caso você não saiba pegar as coordenadas em vector3 adicione esse comando na sua base
@@ -17,4 +17,4 @@ Acess é para dizer se o blip vai aparecer ou não;
 A permissão é por andar, por exemplo na policia, recrutas só podem acessar o 1º andar, altas pantentes podem ir até o resto;
 
 o elevador se auto ajusta conforme são colocadas novas coordenadas
-Maximo 8 coordenadas
+
