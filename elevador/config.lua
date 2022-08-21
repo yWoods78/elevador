@@ -14,6 +14,7 @@ cfg = {}
     }}
     Acess é para dizer se o blip vai aparecer ou não;
     A permissão é por andar, por exemplo na policia, recrutas só podem acessar o 1º andar, altas pantentes podem ir até o resto;
+    Name é o titulo do andar, cada anda pode ter um nome expecifico;
 ]]
 
 cfg.elevadores = {
