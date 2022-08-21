@@ -17,14 +17,14 @@ cfg = {}
 ]]
 
 cfg.elevadores = {
-    ['hospital'] = {
-        {vector3(319.44, -735.41, 29.32), acess = true, perm = 'admin.permissao'},
-        {vector3(322.03, -727.39, 29.31), acess = true, perm = 'admin.permissao'},
-        {vector3(336.33, -730.5, 29.32), acess = true, perm = 'policia.permissao'},
+    ['HOSPITAL'] = {
+        {vector3(319.44, -735.41, 29.32), acess = true,name = 'terreo', perm = 'admin.permissao'},
+        {vector3(322.03, -727.39, 29.31), acess = true,name = 'praça', perm = 'admin.permissao'},
+        {vector3(336.33, -730.5, 29.32), acess = true,name = 'garagem', perm = 'policia.permissao'},
     },
-    ['dp'] = {
-        {vector3(357.63, -709.68, 29.27),acess = true,perm = 'admin.permissao'},
-        {vector3(361.08, -703.14, 29.31), acess = true,perm = 'admin.permissao'},
-        {vector3(355.63, -717.18, 29.27), acess = true,perm = 'admin.permissao'},
+    ['Policia'] = {
+        {vector3(357.63, -709.68, 29.27),acess = true,name = 'Arsenal',perm = 'admin.permissao'},
+        {vector3(361.08, -703.14, 29.31), acess = true,name = 'Garagem',perm = 'admin.permissao'},
+        {vector3(355.63, -717.18, 29.27), acess = true,name = 'Teto',perm = 'admin.permissao'},
     },
 }
