@@ -8,7 +8,7 @@ cfg = {}
             local user_id = vRP.getUserId(source)
             if vRP.hasPermission(user_id,"suaperm.permissao")then
                 local x,y,z = vRPclient.getPosition(source)
-                vRP.prompt(source,"Cordenadas:",'vector3('..tD(x)..", "..tD(y)..", "..tD(z)..")")
+                vRP.prompt(source,"Cordenadas:",'vector3('..x..", "..y..", "..z..")")
             end
         end)
     }}
