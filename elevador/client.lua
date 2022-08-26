@@ -29,7 +29,15 @@ end
 RegisterNUICallback("ButtonClick",function(data,cb)
 	local ped = PlayerPedId()
 	if data ~= 'fechar' then
-		if vSERVER.checkpermission(teste[data]) then
+		if teste[data] then
+			if vSERVER.checkpermission(teste[data]) then
+				DoScreenFadeOut(1000)
+				ToggleActionMenu()
+				SetTimeout(1400,function()
+					setcds(slavo,data)
+				end)
+			end
+		else
 			DoScreenFadeOut(1000)
 			ToggleActionMenu()
 			SetTimeout(1400,function()
