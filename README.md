@@ -22,4 +22,4 @@ end)
 - **Ajuste Automático**: O sistema de elevador é projetado para se ajustar automaticamente conforme novas coordenadas são adicionadas.
 
 ## 🌐 Suporte
-Para qualquer suporte ou dúvidas adicionais, você pode entrar em contato conosco em nosso servidor Discord [aqui](https://discord.gg/KWxsjNvJRK).
+Para qualquer suporte ou dúvidas adicionais, você pode entrar em contato conosco em nosso servidor Discord [aqui](https://discord.gg/aeGaqs4EbG).
