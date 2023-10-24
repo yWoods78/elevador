@@ -1,21 +1,25 @@
-# elevador
-Elevador com multi coordenadas 
+# Elevador
 
-As coordenadas devem ser em vector3 
-Caso você não saiba pegar as coordenadas em vector3 adicione esse comando na sua base
+## Descrição
+Este é um sistema de elevador com suporte para múltiplas coordenadas em formato `vector3`. O sistema é projetado para funcionar em servidores de GTA V com o framework vRP, mas pode ser adaptado para outros contextos.
 
-        RegisterCommand('vec',function(source,args,rawCommand)
-            local user_id = vRP.getUserId(source)
-            if vRP.hasPermission(user_id,"suaperm.permissao")then
-                local x,y,z = vRPclient.getPosition(source)
-                vRP.prompt(source,"Cordenadas:",'vector3('..x..", "..y..", "..z..")")
-            end
-        end)
-    
-Acess é para dizer se o blip vai aparecer ou não;
+## Comandos
+Para adquirir as coordenadas em formato `vector3`, você pode utilizar o seguinte comando:
 
-A permissão é por andar, por exemplo na policia, recrutas só podem acessar o 1º andar, altas pantentes podem ir até o resto;
+```lua
+RegisterCommand('vec', function(source, args, rawCommand)
+    local user_id = vRP.getUserId(source)
+    if vRP.hasPermission(user_id, "suaperm.permissao") then
+        local x, y, z = vRPclient.getPosition(source)
+        vRP.prompt(source, "Coordenadas:", 'vector3(' .. x .. ", " .. y .. ", " .. z .. ")")
+    end
+end)
+```
 
-o elevador se auto ajusta conforme são colocadas novas coordenadas
+## Funcionalidades
+- **Acesso Controlado**: O sistema permite definir permissões de acesso para diferentes andares. Por exemplo, na polícia, recrutas podem acessar apenas o 1º andar, enquanto patentes superiores têm acesso aos demais andares.
 
-Qualquer suporte em https://discord.gg/KWxsjNvJRK
+- **Ajuste Automático**: O sistema de elevador é projetado para se ajustar automaticamente conforme novas coordenadas são adicionadas.
+
+## Suporte
+Para qualquer suporte ou dúvidas adicionais, você pode entrar em contato conosco em nosso servidor Discord [aqui](https://discord.gg/KWxsjNvJRK).
