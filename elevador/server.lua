@@ -8,26 +8,22 @@ vRPclient = Tunnel.getInterface("vRP")
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- CONEXÃO
 -----------------------------------------------------------------------------------------------------------------------------------------
-src = {}
-Tunnel.bindInterface("elevador",src)
+vSERVER = {}
+Tunnel.bindInterface(GetCurrentResourceName(),vSERVER)
 
-function src.checkpermission(perm)
+function vSERVER.checkpermission(perm)
     local source = source
     local user_id = vRP.getUserId(source)
+    if not perm or perm == "" then return true end
+    if type(perm) == "table" then
+        for i = 0,#perm do
+            if vRP.hasPermission(user_id,perm[i]) then
+                return true
+            end
+        end
+        return false
+    end
     if vRP.hasPermission(user_id,perm) then
         return true
     end
-end
-
-function src.elevs(type)
-    local elevadores = {}
-    for k,v in pairs(cfg.elevadores) do
-        for k2,v2 in pairs(v) do
-            if k == type then
-                table.insert(elevadores,{slot = k2,title = v2.name})
-            end
-        end
-    end
-
-    return elevadores
 end
