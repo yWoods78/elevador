@@ -28,7 +28,7 @@ RegisterNUICallback("close",function(data,cb)
 end)
 
 RegisterNUICallback("floorSelected",function(data,cb)
-	data.floor = tonumber(data.floor)
+	data.floor = tonumber(data.floor) + 1
 	if vSERVER.checkpermission(cfg.elevadores[savedIndex][data.floor].perm) then
 		DoScreenFadeOut(1000)
 		ToggleActionMenu()
